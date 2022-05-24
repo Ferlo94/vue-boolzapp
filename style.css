@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(0deg, #DBDBD2 80%, #009688 15%);
+    background: linear-gradient(0deg, #DBDBD2 85%, #009688 15%);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -42,7 +42,7 @@ body {
     overflow-y: scroll;
 }
 
-.barra-alta-sx {
+.barra-alta-sx, .sofia, .michele {
     background-color: #eaeaea;
     height: 50px;
     display: flex;
@@ -71,6 +71,32 @@ body {
     color: #b1b1b1;
 }
 
+.barra-celeste-sx {
+    background-color: #8edafc;
+    height: 58px;
+    display: flex;
+    align-items: center;
+
+}
+
+.cerchio-bianco-campanella-sx {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-left: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* COLORI */
+
+.light-blue {
+    color: #8edafc;
+}
+
 
 /* VARIE GRANDEZZE DA USARE */
 
@@ -78,10 +104,14 @@ body {
     padding: 0 3px;
 }
 
-.margin-left-12px {
-    margin-left: 12px;
+.margin-left-10px {
+    margin-left: 10px;
 }
 
-.margin-right-12px {
-    margin-right: 12px;
+.margin-right-10px {
+    margin-right: 10px;
+}
+
+.font-size-13px {
+    font-size: 13px;
 }
