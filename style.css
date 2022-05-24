@@ -11,6 +11,9 @@ body {
     align-items: center;
     justify-content: center;
 
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 .container {
@@ -54,8 +57,6 @@ body {
     
 
 }
-
-img
 
 .barra-alta-dx {
     background-color: #E6DFD6;
