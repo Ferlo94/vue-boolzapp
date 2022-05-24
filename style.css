@@ -83,7 +83,7 @@ body {
     background-color: white;
     width: 40px;
     height: 40px;
-    border-radius: 50px;
+    border-radius: 20px;
     margin-left: 15px;
 
     display: flex;
@@ -95,6 +95,10 @@ body {
 
 .light-blue {
     color: #8edafc;
+}
+
+.grey {
+    color: #5f5f5f;
 }
 
 
@@ -114,4 +118,8 @@ body {
 
 .font-size-13px {
     font-size: 13px;
+}
+
+.font-size-10px {
+    font-size: 10px;
 }
