@@ -38,5 +38,11 @@ body {
 .barra-alta-sx {
     background-color: #E6DFD6;
     height: 50px;
-    
+    border-right: 1px solid grey;
+
+}
+
+.barra-alta-dx {
+    background-color: #E6DFD6;
+    height: 50px;
 }
