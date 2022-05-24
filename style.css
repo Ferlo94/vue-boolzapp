@@ -14,9 +14,29 @@ body {
 }
 
 .container {
-    background-color: brown;
     height: 95vh;
     width: 75vw;
-   
-      
+    display: flex;    
+}
+
+.col-sx {
+    background-color: rgb(136, 180, 93);
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-dx {
+    background-color: rgb(104, 156, 51);
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.barra-alta-sx {
+    background-color: #E6DFD6;
+    height: 50px;
+    
 }
