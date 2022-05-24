@@ -43,11 +43,11 @@ body {
 }
 
 .barra-alta-sx {
-    background-color: #E6DFD6;
+    background-color: #eaeaea;
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
@@ -59,13 +59,16 @@ body {
 }
 
 .barra-alta-dx {
-    background-color: #E6DFD6;
+    background-color: #eaeaea;
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border-left: 1px solid grey
 }
 
 .icons-barra-alta-sx {
-    
+    color: #b1b1b1;
 }
 
 
@@ -73,4 +76,12 @@ body {
 
 .padding-LR-3px {
     padding: 0 3px;
+}
+
+.margin-left-12px {
+    margin-left: 12px;
+}
+
+.margin-right-12px {
+    margin-right: 12px;
 }
