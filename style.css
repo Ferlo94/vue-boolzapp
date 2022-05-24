@@ -7,4 +7,16 @@
 body {
     background: linear-gradient(0deg, #DBDBD2 80%, #009688 20%);
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    background-color: brown;
+    height: 95vh;
+    width: 75vw;
+   
+      
 }
