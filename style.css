@@ -63,3 +63,14 @@ body {
     height: 50px;
     border-left: 1px solid grey
 }
+
+.icons-barra-alta-sx {
+    
+}
+
+
+/* VARIE GRANDEZZE DA USARE */
+
+.padding-LR-3px {
+    padding: 0 3px;
+}
