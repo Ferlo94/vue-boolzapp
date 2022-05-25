@@ -137,6 +137,43 @@ button {
     background-image: url(img/mine.jpg);
     height: 100%;
     overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: ;
+}
+
+.container-nuvolette {
+    width: 80%;
+    height: 100%;
+    background-color: #009688;
+    display: flex;
+
+}
+
+.container-nuvolette-bianche {
+    background-color: red;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container-nuvolette-verdi {
+    background-color: #8edafc;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nuvoletta-bianca {
+    height: 50px;
+    width: 100px;
+    background-color: white;
+}
+
+.nuvoletta-verde {
+    height: 50px;
+    width: 100px;
+    background-color: green;
 }
 
 .bottom-dx {
