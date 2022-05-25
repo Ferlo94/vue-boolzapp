@@ -44,7 +44,7 @@ body {
 
 .barra-alta-sx, .sofia, .michele {
     background-color: #eaeaea;
-    height: 50px;
+    height: 3.125rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,18 +53,18 @@ body {
 
 .img-avatar {
     height: 80%;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     
 
 }
 
 .barra-alta-dx {
     background-color: #eaeaea;
-    height: 50px;
+    height: 3.125rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-left: 1px solid grey
+    border-left: .0625rem solid grey
 }
 
 .icons-barra-alta-sx {
@@ -73,7 +73,7 @@ body {
 
 .barra-celeste-sx {
     background-color: #8edafc;
-    height: 58px;
+    height: 3.625rem;
     display: flex;
     align-items: center;
 
@@ -81,14 +81,24 @@ body {
 
 .cerchio-bianco-campanella-sx {
     background-color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    margin-left: 15px;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    border-radius: 100%;
+    margin-left: .9375rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.search {
+    background-color: #f5f4f4;
+    display: flex;
+    padding: .3125rem;
+}
+.search button,
+.search input {
+    border: none;
 }
 
 /* COLORI */
@@ -101,25 +111,41 @@ body {
     color: #5f5f5f;
 }
 
+.white {
+    background-color: white;
+}
+
 
 /* VARIE GRANDEZZE DA USARE */
 
 .padding-LR-3px {
-    padding: 0 3px;
+    padding: 0 .1875rem;
+}
+
+.padding-LR-3px {
+    padding: 0 .1875rem;
+}
+
+.padding-10px {
+    padding: .375rem;
 }
 
 .margin-left-10px {
-    margin-left: 10px;
+    margin-left: .625rem;
 }
 
 .margin-right-10px {
-    margin-right: 10px;
+    margin-right: .625rem;
 }
 
 .font-size-13px {
-    font-size: 13px;
+    font-size: .8125rem;
 }
 
 .font-size-10px {
-    font-size: 10px;
+    font-size: .625rem;
+}
+
+.width-100 {
+    width: 100%;
 }
