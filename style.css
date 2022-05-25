@@ -89,9 +89,22 @@ body {
 .user {
     height: 50px;
     border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nome-e-avatar {
+    height: 50px;
+    border-bottom: 1px solid lightgrey;
     padding: 3px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.orario-user {
+    margin-top: 5px;
+    margin-right: 5px;
 }
 
 

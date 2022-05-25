@@ -47,11 +47,14 @@
                 <div class="contacts">
                     <ul class="lista">
                         <li class="user" v-for="contact in contacts">
-                            <img class="img-avatar" :src="`img/avatar${contact.avatar}.jpg`" alt="contact.name">
-                            <span>
-                                {{contact.name}}
-                                <p class="font-size-10px margin-top-3px grey">Ultimo messaggio inviato</p>
-                            </span>
+                            <div class="nome-e-avatar">
+                                <img class="img-avatar" :src="`img/avatar${contact.avatar}.jpg`" alt="contact.name">
+                                <span>
+                                    {{contact.name}}
+                                    <p class="font-size-10px margin-top-3px grey">Ultimo messaggio inviato</p>
+                                </span>
+                            </div>    
+                            <p class="font-size-10px orario-user grey">12:00</p>
                         </li>
                     </ul>
                 </div>
