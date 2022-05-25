@@ -145,20 +145,19 @@ button {
 .container-nuvolette {
     width: 80%;
     height: 100%;
-    background-color: #009688;
+    margin-top: 40px;
     display: flex;
 
 }
 
 .container-nuvolette-bianche {
-    background-color: red;
     width: 50%;
     display: flex;
     justify-content: flex-start;
 }
 
 .container-nuvolette-verdi {
-    background-color: #8edafc;
+
     width: 50%;
     display: flex;
     justify-content: flex-end;
@@ -166,14 +165,22 @@ button {
 
 .nuvoletta-bianca {
     height: 50px;
-    width: 100px;
+    width: 130px;
     background-color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 7px;
 }
 
 .nuvoletta-verde {
     height: 50px;
-    width: 100px;
+    width: 130px;
     background-color: green;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 7px;
 }
 
 .bottom-dx {
