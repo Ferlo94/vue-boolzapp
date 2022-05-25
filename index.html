@@ -48,7 +48,10 @@
                     <ul class="lista">
                         <li class="user" v-for="contact in contacts">
                             <img class="img-avatar" :src="`img/avatar${contact.avatar}.jpg`" alt="contact.name">
-                            {{contact.name}}
+                            <span>
+                                {{contact.name}}
+                                <p class="font-size-10px margin-top-3px grey">Ultimo messaggio inviato</p>
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -62,7 +65,11 @@
                     <!-- AVATAR DX -->
                     <div class="michele">
                         <img class="img-avatar margin-left-10px" src="/img/avatar_1.jpg" alt="">
-                        <p class="font-size-13px">Michele</p>
+                        <span>
+                            <p class="font-size-13px margin-bottom-3px">Michele</p>
+                            <p class="font-size-10px grey">Ultimo accesso oggi alle 12:00</p>
+                        </span>
+                        
                     </div>
                     <!-- ICONE DX -->
                     <div class="icons-barra-alta-sx margin-right-10px pointer">
