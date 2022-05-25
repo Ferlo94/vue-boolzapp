@@ -11,69 +11,73 @@
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <title>Whattsapp</title>
 </head>
 <body>
-    <div class="container">
-        <!-- COLONNA SX -->
-        <div class="col-sx">
-            <div class="barra-alta-sx">
-                <!-- AVATAR SX -->
-                <div class="sofia">
-                <img class="img-avatar margin-left-10px" src="/img/avatar_io.jpg" alt="">
-                <p class="font-size-13px">Sofia</p>
+    <div id="app" class="app">
+        <div class="container">
+            <!-- COLONNA SX -->
+            <div class="col-sx">
+                <div class="barra-alta-sx">
+                    <!-- AVATAR SX -->
+                    <div class="sofia">
+                    <img class="img-avatar margin-left-10px" src="/img/avatar_io.jpg" alt="">
+                    <p class="font-size-13px">Sofia</p>
+                    </div>
+                    <!-- ICONE SX -->
+                    <div class="icons-barra-alta-sx margin-right-10px pointer">
+                        <i class="fa-solid fa-circle-notch padding-LR-3px pointer"></i>
+                        <i class="fa-solid fa-message padding-LR-3px pointer"></i>
+                        <i class="fa-solid fa-ellipsis-vertical padding-LR-3px pointer"></i>
+                    </div>
                 </div>
-                <!-- ICONE SX -->
-                <div class="icons-barra-alta-sx margin-right-10px pointer">
-                    <i class="fa-solid fa-circle-notch padding-LR-3px pointer"></i>
-                    <i class="fa-solid fa-message padding-LR-3px pointer"></i>
-                    <i class="fa-solid fa-ellipsis-vertical padding-LR-3px pointer"></i>
+                <!-- BARRA CELESTE E CAMPANELLA -->
+                <div class="barra-celeste-sx">
+                    <div class="cerchio-bianco-campanella-sx margin-right-10px pointer">
+                        <i class="fa-solid fa-bell-slash light-blue pointer"></i>
+                    </div>
+                    <span class="font-size-10px"> Ricevi notifiche di nuovi messaggi <br>
+                    <a class="grey" href="#">Attiva notifiche desktop</a></span>
                 </div>
-            </div>
-            <!-- BARRA CELESTE E CAMPANELLA -->
-            <div class="barra-celeste-sx">
-                <div class="cerchio-bianco-campanella-sx margin-right-10px pointer">
-                    <i class="fa-solid fa-bell-slash light-blue pointer"></i>
+                <div class="search">
+                    <button class="white"><i class="fa-solid fa-magnifying-glass grey padding-10px pointer"></i></button><input class="padding-10px width-100" type="text" placeholder=" Cerca o inizia una nuova chat ">
                 </div>
-                <span class="font-size-10px"> Ricevi notifiche di nuovi messaggi <br>
-                <a class="grey" href="#">Attiva notifiche desktop</a></span>
-            </div>
-            <div class="search">
-                <button class="white"><i class="fa-solid fa-magnifying-glass grey padding-10px pointer"></i></button><input class="padding-10px width-100" type="text" placeholder=" Cerca o inizia una nuova chat ">
-            </div>
-        
-            <div class="contacts">
-                <ul class="lista">
-                    <li class="user" v-for=""></li>
-                </ul>
-            </div>
-        </div>
-
             
-        
-        <!-- COLONNA DX -->
-        <div class="col-dx">
-            <div class="barra-alta-dx">
-                <!-- AVATAR DX -->
-                <div class="michele">
-                    <img class="img-avatar margin-left-10px" src="/img/avatar_1.jpg" alt="">
-                    <p class="font-size-13px">Michele</p>
-                </div>
-                <!-- ICONE DX -->
-                <div class="icons-barra-alta-sx margin-right-10px pointer">
-                    <i class="fa-solid fa-magnifying-glass padding-LR-3px pointer"></i>
-                    <i class="fa-solid fa-paperclip padding-LR-3px pointer"></i>
-                    <i class="fa-solid fa-ellipsis-vertical padding-LR-3px pointer"></i>
+                <div class="contacts">
+                    <ul class="lista">
+                        <li class="user" v-for="contact in contacts">
+                            <img class="img-avatar" :src="`img/avatar${contact.avatar}.jpg`" alt="contact.name">
+                            {{contact.name}}
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="chat-dx">
 
+                
+            
+            <!-- COLONNA DX -->
+            <div class="col-dx">
+                <div class="barra-alta-dx">
+                    <!-- AVATAR DX -->
+                    <div class="michele">
+                        <img class="img-avatar margin-left-10px" src="/img/avatar_1.jpg" alt="">
+                        <p class="font-size-13px">Michele</p>
+                    </div>
+                    <!-- ICONE DX -->
+                    <div class="icons-barra-alta-sx margin-right-10px pointer">
+                        <i class="fa-solid fa-magnifying-glass padding-LR-3px pointer"></i>
+                        <i class="fa-solid fa-paperclip padding-LR-3px pointer"></i>
+                        <i class="fa-solid fa-ellipsis-vertical padding-LR-3px pointer"></i>
+                    </div>
+                </div>
+                <div class="chat-dx">
+
+                </div>
             </div>
         </div>
-    </div>
-
+    </div>    
 
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 </body>
 </html>

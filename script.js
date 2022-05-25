@@ -12,7 +12,6 @@
 // colore sfondo input ricerca contatto: #FAFAFA
 
 const app = new Vue({
-
     el:'#app',
     data: {
         contacts: [
@@ -179,5 +178,8 @@ const app = new Vue({
             }
         ]
 
-    }
+    },
+    methods: {
+
+    },
 });

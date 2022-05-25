@@ -25,6 +25,7 @@ body {
 .img-avatar {
     height: 80%;
     border-radius: 3.125rem;
+    margin-right: 5px;
 }
 
 /* PARTE SINISTRA */
@@ -81,8 +82,17 @@ body {
 .contacts {
     height: 100%;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
 }
 
+.user {
+    height: 50px;
+    border-bottom: 1px solid lightgrey;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+}
 
 
 /* PARTE DESTRA */
