@@ -12,9 +12,9 @@ body {
     justify-content: center;
 
     font-family: 'Lato', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-
 }
+
+/* COMMON */
 
 .container {
     height: 95vh;
@@ -22,24 +22,19 @@ body {
     display: flex;    
 }
 
+.img-avatar {
+    height: 80%;
+    border-radius: 3.125rem;
+}
+
+/* PARTE SINISTRA */
+
 .col-sx {
     background-color: rgb(255, 255, 255);
     width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
-
-    
-}
-
-.col-dx {
-    background-image: url(img/mine.jpg);
-    width: 60%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
-    overflow-y: scroll;
 }
 
 .barra-alta-sx, .sofia, .michele {
@@ -47,24 +42,7 @@ body {
     height: 3.125rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
-}
-
-.img-avatar {
-    height: 80%;
-    border-radius: 3.125rem;
-    
-
-}
-
-.barra-alta-dx {
-    background-color: #eaeaea;
-    height: 3.125rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-left: .0625rem solid grey
+    justify-content: space-between;   
 }
 
 .icons-barra-alta-sx {
@@ -85,7 +63,7 @@ body {
     height: 2.1875rem;
     border-radius: 100%;
     margin-left: .9375rem;
-
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,10 +74,42 @@ body {
     display: flex;
     padding: .3125rem;
 }
-.search button,
-.search input {
+.search button, .search input {
     border: none;
 }
+
+.contacts {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+
+
+/* PARTE DESTRA */
+.col-dx {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.barra-alta-dx {
+    background-color: #eaeaea;
+    height: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-left: .0625rem solid grey
+}
+
+.chat-dx {
+    background-image: url(img/mine.jpg);
+    height: 100%;
+    overflow-y: scroll;
+}
+
+
+
 
 /* COLORI */
 
@@ -148,4 +158,8 @@ body {
 
 .width-100 {
     width: 100%;
+}
+
+.pointer {
+    cursor: pointer;
 }
