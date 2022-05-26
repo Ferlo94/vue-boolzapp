@@ -47,7 +47,7 @@
             
                 <div class="contacts">
                     <ul class="lista">
-                        <li class="user" v-for="contact in contacts">
+                        <li class="user" v-for="(contact, index) in contacts" @click="currentContactIndex = index">
                             <div class="nome-e-avatar">
                                 <img class="img-avatar" :src="`img/avatar${contact.avatar}.jpg`" alt="contact.name">
                                 <span>
@@ -82,16 +82,11 @@
                 </div>
                 <div class="chat-dx">
                     <div class="container-nuvolette">
-                        <div class="container-nuvolette-bianche">
-                            <div class="nuvoletta-bianca">
-                                <p>ciao</p>
-                            </div>
+
+                        <div class="message" v-for="message in contacts[currentContactIndex].messages" :class="message.status">
+                            {{message}}
                         </div>
-                        <div class="container-nuvolette-verdi">
-                            <div class="nuvoletta-verde">
-                                <p>ciao</p>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
                 <div class="bottom-dx grey-chiaro-bg">

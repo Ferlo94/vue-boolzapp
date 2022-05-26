@@ -145,40 +145,17 @@ button {
     height: 100%;
     margin-top: 2.5rem;
     display: flex;
+    flex-direction: column;
 
 }
 
-.container-nuvolette-bianche {
-    width: 50%;
-    display: flex;
-    justify-content: flex-start;
+.sent {
+    align-self: flex-end;
+
 }
 
-.container-nuvolette-verdi {
-
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.nuvoletta-bianca {
-    height: 3.125rem;
-    width: 8.125rem;
-    background-color: white;
-    border-radius: .75rem;
-    display: flex;
-    align-items: center;
-    padding: .4375rem;
-}
-
-.nuvoletta-verde {
-    height: 3.125rem;
-    width: 8.125rem;
-    background-color: green;
-    border-radius: .75rem;
-    display: flex;
-    align-items: center;
-    padding: .4375rem;
+.received {
+    align-self: flex-start;
 }
 
 .bottom-dx {

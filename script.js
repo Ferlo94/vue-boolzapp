@@ -14,6 +14,7 @@
 const app = new Vue({
     el:'#app',
     data: {
+        currentContactIndex: 0,
         contacts: [
             {
                 name: 'Michele',
