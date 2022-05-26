@@ -112,7 +112,7 @@ button {
 }
 
 .time {
-    margin-right: 5px;
+    margin-right: .3125rem;
 }
 
 /* PARTE DESTRA */
@@ -146,16 +146,25 @@ button {
     margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
+    gap: .625rem;
 
 }
 
 .sent {
     align-self: flex-end;
+    background-color: lightgreen;
+    padding: .3125rem;
+    border-radius: 7px;
 
 }
 
 .received {
     align-self: flex-start;
+    background-color: white;
+    padding: .3125rem;
+    border-radius: 7px;
+
+
 }
 
 .bottom-dx {
