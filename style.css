@@ -111,9 +111,8 @@ button {
     justify-content: space-between;
 }
 
-.orario-user {
-    margin-top: .3125rem;
-    margin-right: .3125rem;
+.time {
+    margin-right: 5px;
 }
 
 /* PARTE DESTRA */

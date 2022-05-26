@@ -183,7 +183,7 @@ const app = new Vue({
         getLastMessageDate(contact) {
             const DateTime = luxon.DateTime;
             const mess = contact.messages[contact.messages.length - 1];
-            return DateTime.formFormat(mess.date, "dd/MM/yyyy HH:mm:ss").toFormat('HH:mm');
+            return DateTime.fromFormat(mess.date, "dd/MM/yyyy HH:mm:ss").toFormat('HH:mm');
         }
 
     },
