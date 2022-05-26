@@ -181,7 +181,7 @@ const app = new Vue({
     },
     methods: {
         getLastMessageDate(contact) {
-            const mess = contact.messages [contact.length - 1];
+            const mess = contact.messages[contact.messages.length - 1];
             return mess.date;
         }
 
