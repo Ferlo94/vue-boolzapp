@@ -180,6 +180,10 @@ const app = new Vue({
 
     },
     methods: {
+        getLastMessageDate(contact) {
+            const mess = contact.messages [contact.length - 1];
+            return mess.date;
+        }
 
     },
 });
