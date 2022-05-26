@@ -152,9 +152,10 @@ button {
 
 .sent {
     align-self: flex-end;
-    background-color: lightgreen;
+    background-color: #d5f9ba;
     padding: .3125rem;
     border-radius: 7px;
+    text-align: center;
 
 }
 
