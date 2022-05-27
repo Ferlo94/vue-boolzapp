@@ -92,7 +92,7 @@
                 <div class="bottom-dx grey-chiaro-bg">
 
                     <button><i class="fa-regular fa-face-smile pointer grey font-size-16px margin-left-25px"></i></button>
-                    <form @submit.prevent="sendMessage">
+                    <form class="form-input" @submit.prevent="sendMessage">
                         <input class="input-digitazione" type="text" placeholder="Scrivi un messaggio" @keyup.enter=""  v-model="newMessage" required pattern = ".*\S+.*">
                     </form>
                     <button><i class="fa-solid fa-microphone pointer grey font-size-16px margin-right-25px"></i></button>

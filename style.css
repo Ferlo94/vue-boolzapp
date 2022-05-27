@@ -115,6 +115,12 @@ button {
     margin-right: .3125rem;
 }
 
+.form-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 /* PARTE DESTRA */
 .col-dx {
     width: 60%;
@@ -176,7 +182,7 @@ button {
 }
 
 .input-digitazione {
-    width: 100%;
+    width: 80%;
     padding: .3125rem;
     border: none;
 }
