@@ -44,7 +44,6 @@
                 <div class="search">
                     <button class="white"><i class="fa-solid fa-magnifying-glass grey padding-10px pointer"></i></button><input class="padding-10px width-100" type="text" placeholder=" Cerca o inizia una nuova chat ">
                 </div>
-            
                 <div class="contacts">
                     <ul class="lista">
                         <li class="user" v-for="(contact, index) in contacts" @click="currentContactIndex = index">
@@ -60,7 +59,6 @@
                     </ul>
                 </div>
             </div>
-
             <!-- COLONNA DX -->
             <div class="col-dx">
                 <div class="barra-alta-dx">
@@ -70,8 +68,7 @@
                         <span>
                             <p class="font-size-13px margin-bottom-3px">Michele</p>
                             <p class="font-size-10px grey">Ultimo accesso oggi alle 12:00</p>
-                        </span>
-                        
+                        </span>    
                     </div>
                     <!-- ICONE DX -->
                     <div class="icons-barra-alta-sx margin-right-10px pointer">
@@ -86,11 +83,9 @@
                         <div class="message" v-for="message in contacts[currentContactIndex].messages" :class="message.status">
                             {{message.message}}
                         </div>
-
                     </div>
                 </div>
                 <div class="bottom-dx grey-chiaro-bg">
-
                     <button><i class="fa-regular fa-face-smile pointer grey font-size-16px margin-left-25px"></i></button>
                     <form class="form-input" @submit.prevent="sendMessage">
                         <input class="input-digitazione" type="text" placeholder="Scrivi un messaggio" @keyup.enter=""  v-model="newMessage" required pattern = ".*\S+.*">
