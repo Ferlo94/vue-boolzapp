@@ -23,7 +23,7 @@
                 <div class="barra-alta-sx">
                     <!-- AVATAR SX -->
                     <div class="sofia">
-                    <img class="img-avatar margin-left-10px" src="/img/avatar_io.jpg" alt="">
+                    <img class="img-avatar margin-left-10px pointer" src="/img/avatar_io.jpg" alt="">
                     <p class="font-size-13px">Sofia</p>
                     </div>
                     <!-- ICONE SX -->
@@ -48,7 +48,7 @@
                     <ul class="lista">
                         <li class="user" v-for="(contact, index) in contacts" @click="currentContactIndex = index">
                             <div class="nome-e-avatar">
-                                <img class="img-avatar" :src="`img/avatar${contact.avatar}.jpg`" alt="contact.name">
+                                <img class="img-avatar pointer" :src="`img/avatar${contact.avatar}.jpg`" alt="contact.name">
                                 <span>
                                     {{contact.name}}
                                     <p class="font-size-10px margin-top-3px grey">Ultimo messaggio inviato</p>
@@ -64,7 +64,7 @@
                 <div class="barra-alta-dx">
                     <!-- AVATAR DX -->
                     <div class="michele">
-                        <img class="img-avatar margin-left-10px" src="/img/avatar_1.jpg" alt="">
+                        <img class="img-avatar margin-left-10px pointer" src="/img/avatar_1.jpg" alt="">
                         <span>
                             <p class="font-size-13px margin-bottom-3px">Michele</p>
                             <p class="font-size-10px grey">Ultimo accesso oggi alle 12:00</p>
