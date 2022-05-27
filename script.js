@@ -15,6 +15,7 @@ const app = new Vue({
     el:'#app',
     data: {
         currentContactIndex: 0,
+        newMessage:'',
         contacts: [
             {
                 name: 'Michele',
@@ -182,10 +183,38 @@ const app = new Vue({
     },
     methods: {
         getLastMessageDate(contact) {
+
             const DateTime = luxon.DateTime;
             const mess = contact.messages[contact.messages.length - 1];
             return DateTime.fromFormat(mess.date, "dd/MM/yyyy HH:mm:ss").toFormat('HH:mm');
-        }
+        },
 
+        sendMessage() {
+
+            const DateTime = luxon.DateTime;
+            const newMess = {
+
+                date: DateTime.now().toFormat("dd/MM/yyyy HH:mm:ss"),
+                message: this.newMessage,
+                status: 'sent'
+            }
+            this.contacts[this.currentContactIndex].messages.push(newMess);
+            this.newMessage ='';
+            this.cpuMessage(this.contacts[this.currentContactIndex]);
+        },
+
+        cpuMessage(contact) {
+
+                setTimeout(() => {
+
+                const DateTime = luxon.DateTime;
+                const newMess = {
+                    date: DateTime.now().toFormat("dd/MM/yyyy HH:mm:ss"),
+                    message: 'Ok',
+                    status: 'received'
+                };
+                contact.messages.push(newMess);
+            }, 1000);
+        }
     },
 });
